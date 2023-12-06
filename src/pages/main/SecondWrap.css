@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "nbg", "맑은 고딕", HelveticaNeue, DroidSans, Sans-serif,
+    Helvetica;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.background2 {
+  width: 1900px;
+  height: 650px;
+}
+.main2 {
+  position: relative;
+  height: 34vw;
+  margin-top: 20%;
+  background: url("/public/images/2023_christmas_promotion_bg.jpg") no-repeat
+    center;
+  background-size: cover;
+  margin-top: 1px;
+}
+.left {
+  width: 48%;
+}
+.toplogo2 {
+  height: 250px;
+  width: 260px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.Detailbtn2 {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+.right {
+  text-align: right;
+  position: absolute;
+  top: 30%;
+  right: 25%;
+  width: 48%;
+  font-size: 25px;
+  animation: fadein 2s ease 3s;
+  -webkit-animation: fadein 2s;
+  z-index: 9;
+}
+.right h2,
+h5 {
+  color: #fff;
+}
+.right h2 {
+  margin-bottom: 10px;
+}
+.threedrink {
+  width: 860px;
+  height: 530px;
+  margin-top: -400px;
+  margin-left: 800px;
+}
+.Detailbtn2 {
+  width: 8%;
+  height: 38px;
+  cursor: pointer;
+  margin-top: -100px;
+  margin-left: 430px;
+}
+.Detailbtn2 p {
+  padding: 0;
+  color: #fff;
+  border: 2px solid #fff;
+  line-height: 34px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Detailbtn2 p:hover {
+  background-color: #fff;
+  color: red;
+  transition: 0.5s;
+  text-decoration: underline;
+}

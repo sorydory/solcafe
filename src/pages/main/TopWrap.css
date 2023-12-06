@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  max-width: 1400px;
+  width: 100%;
+  height: 680px;
+}
+.main1 {
+  height: 34vw;
+  background-image: url("/public/images/2023_christmas2_top_bg.jpg");
+}
+.mainTop {
+  display: flex;
+  justify-content: center;
+}
+.mainTop .toplogo1 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.Detailbtn1 {
+  width: 8%;
+  height: 38px;
+  z-index: 10;
+  position: absolute;
+  left: 20%;
+  top: 65%;
+}
+
+.Topdrink {
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+.Detailbtn1 p {
+  padding: 0;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  line-height: 34px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.Detailbtn1 p:hover {
+  background-color: #fff;
+  color: #c81d30;
+  transition: 0.5s;
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.topdrink1 {
+  animation: fadein 2s ease 3s;
+  -webkit-animation: fadein 2s;
+  z-index: 9;
+  position: absolute;
+  top: 46.3%;
+  left: 34%;
+  width: 18%;
+}
+.topdrink2 {
+  animation: fadein 4s ease 3s;
+  -webkit-animation: fadein 4s;
+  z-index: 8;
+  position: absolute;
+  top: 45.9%;
+  right: 36.6%;
+  width: 14%;
+}
+.topdrink3 {
+  animation: fadein 5s ease 3s;
+  -webkit-animation: fadein 5s;
+  z-index: 8;
+  position: absolute;
+  top: 46.4%;
+  right: 18.8%;
+  width: 16.9%;
+}
+.topdrink4 {
+  animation: fadein 6s ease 3s;
+  -webkit-animation: fadein 7s;
+  z-index: 7;
+  position: absolute;
+  top: 24.3%;
+  left: 39.7%;
+  width: 17.9%;
+}
+.topdrink5 {
+  animation: fadein 7s ease 3s;
+  -webkit-animation: fadein 7s;
+  z-index: 7;
+  position: absolute;
+  top: 22%;
+  right: 30.3%;
+  width: 13%;
+}
+.topdrink6 {
+  animation: fadein 8s ease 3s;
+  -webkit-animation: fadein 7s;
+  z-index: 7;
+  position: absolute;
+  top: 27.3%;
+  left: 70.7%;
+  width: 11.9%;
+}

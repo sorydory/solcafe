@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Blend from "../detailcoffee/Blend";
 import Brewdcoffee from "../detailcoffee/Brewdcoffee";
 import Coldbrew from "../detailcoffee/Coldbrew";
-import Esopress from "../detailcoffee/Esopress";
+import Espresso from "../detailcoffee/Espresso";
 import Fizzio from "../detailcoffee/Fizzio";
-import Frapp from "../detailcoffee/Frapp";
-import Refres from "../detailcoffee/Refres";
 import "./Coffee.css";
 
 const Coffee1 = () => {
@@ -14,9 +12,6 @@ const Coffee1 = () => {
   const [coffee2, setCoffee2] = useState(false);
   const [coffee3, setCoffee3] = useState(false);
   const [coffee4, setCoffee4] = useState(false);
-  const [coffee5, setCoffee5] = useState(false);
-  const [coffee6, setCoffee6] = useState(false);
-  const [coffee7, setCoffee7] = useState(false);
 
   const [ischecked, setIsCheck] = useState(true);
   const onChange = (e) => {
@@ -26,9 +21,6 @@ const Coffee1 = () => {
     setCoffee2(!coffee2);
     setCoffee3(!coffee3);
     setCoffee4(!coffee4);
-    setCoffee5(!coffee5);
-    setCoffee6(!coffee6);
-    setCoffee7(!coffee7);
   };
   const onChange1 = (e) => {
     setIsCheck(!ischecked);
@@ -64,33 +56,19 @@ const Coffee1 = () => {
             </li>
             <li>
               <input type="checkbox" onChange={() => setCoffee3(!coffee3)} />
-              <label>프라푸치노</label>
-            </li>
-            <li>
-              <input type="checkbox" onChange={() => setCoffee4(!coffee4)} />
               <label>블렌디드</label>
             </li>
             <li>
-              <input type="checkbox" onChange={() => setCoffee5(!coffee5)} />
-              <label>AW 리프레셔</label>
-            </li>
-            <li>
-              <input type="checkbox" onChange={() => setCoffee6(!coffee6)} />
-              <label>AW 피지오</label>
-            </li>
-            <li>
-              <input type="checkbox" onChange={() => setCoffee7(!coffee7)} />
-              <label>티(티바나)</label>
+              <input type="checkbox" onChange={() => setCoffee4(!coffee4)} />
+              <label>SOL 피지오</label>
             </li>
           </ul>
           <div className="menuview">
             {coffee && <Coldbrew />}
             {coffee1 && <Brewdcoffee />}
-            {coffee2 && <Esopress />}
-            {coffee3 && <Frapp />}
-            {coffee4 && <Blend />}
-            {coffee5 && <Refres />}
-            {coffee6 && <Fizzio />}
+            {coffee2 && <Espresso />}
+            {coffee3 && <Blend />}
+            {coffee4 && <Fizzio />}
           </div>
         </div>
       </div>

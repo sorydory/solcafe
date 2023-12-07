@@ -4,23 +4,31 @@
   box-sizing: border-box;
 }
 
-.background {
+/* .background {
   max-width: 1400px;
   width: 100%;
   height: 680px;
-}
+} */
 .main1 {
   height: 34vw;
+  width: 100%;
   background-image: url("/public/images/2023_christmas2_top_bg.jpg");
 }
 .mainTop {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .mainTop .toplogo1 {
+  width: 48%;
+  height: 600px;
+  float: left;
+  position: relative;
+}
+.mainTop .toplogo1 img {
   position: absolute;
+  z-index: 1;
   top: 30%;
-  left: 15%;
+  left: 30%;
 }
 
 .Detailbtn1 {
@@ -33,8 +41,9 @@
 }
 
 .Topdrink {
-  margin-top: 80px;
-  margin-left: 10px;
+  width: 48%;
+  position: relative;
+  height: 600px;
 }
 
 .Detailbtn1 p {
@@ -80,8 +89,7 @@
   z-index: 9;
   position: absolute;
   top: 46.3%;
-  left: 34%;
-  width: 18%;
+  left: 1%;
 }
 .topdrink2 {
   animation: fadein 4s ease 3s;

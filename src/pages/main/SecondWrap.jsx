@@ -17,11 +17,8 @@ const SecondWrap = () => {
           </div>
         </Link>
       </div>
-      <div className="right">
-        <h2>
-          다양한 메뉴를 <br />
-          SOLCAFE에서 즐겨보세요
-        </h2>
+      <div className="bean_txt_box">
+        <h2>크리스마스 블렌드 250g</h2>
         <h5>
           크리스마스를 더욱 특별하게 만들어 줄 원두
           <br />

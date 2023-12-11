@@ -98,7 +98,7 @@ const Header = () => {
               )}
               {isLogin ? (
                 <>
-                  <li>My CS Coffee</li>
+                  <li>SOL Coffee</li>
                 </>
               ) : (
                 <li>

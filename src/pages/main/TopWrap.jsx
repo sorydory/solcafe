@@ -46,7 +46,7 @@ const TopWrap = () => {
           ></img>
         </div>
       </div>
-      <Link to="/LookOne">
+      <Link to="/NewsView1">
         <div className="Detailbtn1">
           <p>자세히 보기</p>
         </div>

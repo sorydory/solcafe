@@ -14,14 +14,14 @@
   }
 }
 
-@-webkit-keyframes fadein {
+/* @-webkit-keyframes fadein {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
+} */
 .background2 {
   width: 1900px;
   height: 650px;
@@ -44,8 +44,8 @@
   position: absolute;
   top: 20%;
   left: 30%;
-  animation: fadein 5s ease 6s;
-  -webkit-animation: fadein 4s;
+  animation: fadein 2s linear 2s;
+  animation-delay: 2s;
 }
 .Detailbtn2 {
   position: absolute;
@@ -60,7 +60,6 @@
   width: 48%;
   font-size: 25px;
   animation: fadein 2s ease 3s;
-  -webkit-animation: fadein 2s;
   z-index: 9;
 }
 .bean_txt_box h5 {

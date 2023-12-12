@@ -1,7 +1,7 @@
 import React, { useReducer, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import DetailHeader from "./DetailHeader";
+import Nav from "./Nav";
 import { setLogin, setLogout } from "../modules/logincheck";
 import { getCookie, removeCookie } from "../util/cookie";
 import "./Header.css";
@@ -132,7 +132,7 @@ const Header = () => {
                   onMouseLeave={() => dispatch1({ type: "CLOSE" })}
                 >
                   <Link to="/Coffee">COFFEE</Link>
-                  <DetailHeader isState1={state1} />
+                  <Nav isState1={state1} />
                 </li>
                 <li
                   className="header2li"
@@ -140,7 +140,7 @@ const Header = () => {
                   onMouseLeave={() => dispatch2({ type: "CLOSE" })}
                 >
                   <Link to="/Store">STORE</Link>
-                  <DetailHeader isState2={state2} />
+                  <Nav isState2={state2} />
                 </li>
                 <li
                   className="header2li"
@@ -148,7 +148,7 @@ const Header = () => {
                   onMouseLeave={() => dispatch3({ type: "CLOSE" })}
                 >
                   <Link to="/Responsibility">RESPONSIBILITY</Link>
-                  <DetailHeader isState3={state3} />
+                  <Nav isState3={state3} />
                 </li>
                 <li
                   className="header2li"
@@ -156,7 +156,7 @@ const Header = () => {
                   onMouseLeave={() => dispatch4({ type: "CLOSE" })}
                 >
                   EVENT
-                  <DetailHeader isState4={state4} />
+                  <Nav isState4={state4} />
                 </li>
                 <li
                   className="header2li"
@@ -164,7 +164,7 @@ const Header = () => {
                   onMouseLeave={() => dispatch5({ type: "CLOSE" })}
                 >
                   NOTICE
-                  <DetailHeader isState5={state5} />
+                  <Nav isState5={state5} />
                 </li>
               </ul>
             </div>

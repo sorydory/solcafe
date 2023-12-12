@@ -4,8 +4,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Coffee from "./pages/container/Coffee";
 import Coffee1 from "./pages/container/Coffee1";
-import LookOne from "./pages/detaillook/LookOne";
-import LookTwo from "./pages/detaillook/LookTwo";
+import NewsView1 from "./pages/detaillook/NewsView1";
+import NewsView3 from "./pages/detaillook/NewsView3";
 import Menu from "./pages/detailmain/Menu";
 import Main from "./pages/Main";
 import Findid from "./pages/member/Findid";
@@ -28,8 +28,8 @@ function App() {
         <Route path="/Findid" element={<Findid />} />
         <Route path="/Findpass" element={<Findpassword />} />
         <Route path="/Writecoffee" element={<WriteCoffee />} />
-        <Route path="/LookOne" element={<LookOne />} />
-        <Route path="/LookTwo" element={<LookTwo />} />
+        <Route path="/NewsView1" element={<NewsView1 />} />
+        <Route path="/NewsView3" element={<NewsView3 />} />
       </Routes>
       <Footer />
     </div>

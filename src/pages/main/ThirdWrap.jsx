@@ -6,7 +6,7 @@ const ThirdWrap = () => {
   return (
     <div>
       <div className="main3">
-        <Link to="/LookTwo">
+        <Link to="/NewsView3">
           <div className="reserve_title">
             <img
               src="images/231023_pc_reserve_logo.png"

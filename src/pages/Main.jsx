@@ -2,12 +2,12 @@ import React from "react";
 import FourWrap from "./main/FourWrap";
 import SecondWrap from "./main/SecondWrap";
 import ThirdWrap from "./main/ThirdWrap";
-import TopWrap from "./main/TopWrap";
+import FirstWrap from "./main/FirstWrap";
 
 const Main = () => {
   return (
     <div>
-      <TopWrap />
+      <FirstWrap />
       <SecondWrap />
       <ThirdWrap />
       <FourWrap />

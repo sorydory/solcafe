@@ -7,8 +7,8 @@ const Nav = ({ isState1, isState2, isState3, isState4, isState5 }) => {
     return (
       <nav id="Detail">
         <div id="menu">
-          <div>
-            <ul>
+          <div className="innermenu">
+            <ul className="coffee">
               <li>
                 <Link to="/Coffee1">콜드 브루</Link>
               </li>
@@ -17,26 +17,27 @@ const Nav = ({ isState1, isState2, isState3, isState4, isState5 }) => {
               <li>프라푸치노</li>
               <li>블렌디드</li>
             </ul>
-          </div>
-          <div>
-            <ul>
-              <li>매장 위치</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>사회공헌 캠페인 소개</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>이벤트</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>공지사항</li>
-            </ul>
+
+            <div>
+              <ul className="location">
+                <li>매장 위치</li>
+              </ul>
+            </div>
+            <div>
+              <ul className="campaign">
+                <li>자주 하는 질문</li>
+              </ul>
+            </div>
+            <div>
+              <ul className="event">
+                <li>이벤트</li>
+              </ul>
+            </div>
+            <div>
+              <ul className="notice">
+                <li>공지사항</li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

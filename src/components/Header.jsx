@@ -59,11 +59,11 @@ function reducer5(state5, action) {
 
 const Header = () => {
   const isLogin = useSelector((state) => state.logincheck.isLogin);
-  const username = getCookie("aw_nickname");
+  const username = getCookie("sol_nickname");
   const dispatch = useDispatch();
   const logoutClick = () => {
-    removeCookie("aw_id");
-    removeCookie("aw_nickname");
+    removeCookie("sol_id");
+    removeCookie("sol_nickname");
     dispatch(setLogout());
   };
   useEffect(() => {
@@ -110,13 +110,13 @@ const Header = () => {
               {isLogin && username === "admin" ? (
                 <>
                   <li className="coffeeadd">
-                    <Link to="/Writecoffee">음료등록</Link>
+                    <Link to="/Writecoffee">음료 등록</Link>
                   </li>
-                  <li className="foodadd">
-                    <Link to="/Writefood">음식등록</Link>
+                  <li className="eventadd">
+                    <Link to="/Writeevent">이벤트 등록</Link>
                   </li>
-                  <li className="productadd">
-                    <Link to="/Writeproduct">상품등록</Link>
+                  <li className="noticeadd">
+                    <Link to="/WriteNotice">뉴스 등록</Link>
                   </li>
                 </>
               ) : null}

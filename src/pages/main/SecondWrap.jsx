@@ -11,7 +11,7 @@ const SecondWrap = () => {
           src="images/2023_m_christmas_promotion_img.png"
           alt=""
         ></img>
-        <Link to="/Menu">
+        <Link to="/NewsView2">
           <div className="Detailbtn2">
             <p>자세히 보기</p>
           </div>

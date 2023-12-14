@@ -1,7 +1,7 @@
 import React from "react";
-import "./NewsView1.css";
+import "./NewsView2.css";
 
-const NewsView1 = () => {
+const NewsView2 = () => {
   return (
     <div className="lookonewrap">
       <div className="looknoe">
@@ -42,7 +42,7 @@ const NewsView1 = () => {
         </ul>
       </div>
       <div id="post">
-        <img src="images/wn_christmas2_01_231122.jpg" alt="" />
+        <img src="wn_christmaswholebeantea_231101.jpg" alt="" />
       </div>
       <button id="list">
         <a href="/">목록</a>
@@ -51,4 +51,4 @@ const NewsView1 = () => {
   );
 };
 
-export default NewsView1;
+export default NewsView2;

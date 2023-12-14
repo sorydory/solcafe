@@ -46,23 +46,15 @@ header .awcafe {
   margin-top: 12px;
   margin-bottom: 25px;
 }
-#header1 li:nth-child(1) {
-  padding: 0 10px;
-  border-right: 1px solid #ccc;
-}
-#header1 li:nth-child(2) {
-  padding: 0 10px;
-  border-right: 1px solid #ccc;
-}
-#header1 li:nth-child(3) {
-  padding: 0 10px;
+#header1 li {
+  padding: 0 5px;
   border-right: 1px solid #ccc;
 }
 #header1 li:nth-child(4) {
-  padding: 5px 10px;
+  padding: 5px 10px !important;
 }
 #header1 li:nth-child(5) {
-  padding: 3px 7px;
+  padding: 3px 7px !important;
 }
 #header2 {
   height: 40%;
@@ -73,31 +65,17 @@ header .awcafe {
   margin-bottom: 20px;
   height: 100%;
   justify-content: space-between;
+  padding: 0 30px;
+  padding-top: 10px;
 }
 .header2li {
-  padding: 2px 13px;
-  transition: 0.9s;
+  transition: 0.5s;
   cursor: pointer;
 }
-.header2li:nth-child(1):hover {
+.header2li:hover {
+  color: #00b050 !important;
   background-color: #2c2a29;
-  color: #fff;
-}
-.header2li:nth-child(2):hover {
-  background-color: #2c2a29;
-  color: #fff;
-}
-.header2li:nth-child(3):hover {
-  background-color: #2c2a29;
-  color: #fff;
-}
-.header2li:nth-child(4):hover {
-  background-color: #2c2a29;
-  color: #fff;
-}
-.header2li:nth-child(5):hover {
-  background-color: #2c2a29;
-  color: #fff;
+  text-decoration: underline;
 }
 #icon {
   border: 1px solid #ccc;

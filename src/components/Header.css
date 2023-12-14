@@ -6,16 +6,11 @@
 li {
   list-style: none;
 }
-header {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-}
 .gnb_wrap {
   border-bottom: 1px solid #e5e5e5;
   border-top: 2px solid #000;
   background-color: #f6f5ef;
+  height: 150px;
 }
 
 header > div > div {
@@ -25,9 +20,9 @@ header h1 {
   margin-top: 20px;
   padding-left: 200px;
 }
-header .awcafe {
-  width: 75px;
-  height: 75px;
+header .solcafe {
+  width: 100%;
+  height: 90%;
   cursor: pointer;
 }
 #Bar {
@@ -65,12 +60,15 @@ header .awcafe {
   margin-bottom: 20px;
   height: 100%;
   justify-content: space-between;
-  padding: 0 30px;
   padding-top: 10px;
+}
+#header2ul span {
+  font-size: 15px;
 }
 .header2li {
   transition: 0.5s;
   cursor: pointer;
+  display: inline-block;
 }
 .header2li:hover {
   color: #00b050 !important;

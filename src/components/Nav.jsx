@@ -24,7 +24,7 @@ const Nav = ({ isState1, isState2, isState3, isState4, isState5 }) => {
               </ul>
             </div>
             <div>
-              <ul className="campaign">
+              <ul className="quest">
                 <li>자주 하는 질문</li>
               </ul>
             </div>

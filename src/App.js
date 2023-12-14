@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Coffee from "./pages/container/Coffee";
 import Coffee1 from "./pages/container/Coffee1";
 import NewsView1 from "./pages/detaillook/NewsView1";
+import NewsView2 from "./pages/detaillook/NewsView2";
 import NewsView3 from "./pages/detaillook/NewsView3";
 import Menu from "./pages/detailmain/Menu";
 import Main from "./pages/Main";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Findpass" element={<Findpassword />} />
         <Route path="/Writecoffee" element={<WriteCoffee />} />
         <Route path="/NewsView1" element={<NewsView1 />} />
+        <Route path="/NewsView2" element={<NewsView2 />} />
         <Route path="/NewsView3" element={<NewsView3 />} />
       </Routes>
       <Footer />

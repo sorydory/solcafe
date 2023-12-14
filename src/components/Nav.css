@@ -16,18 +16,17 @@
   position: absolute;
   left: 548px;
 }
-.coffee {
-  padding-left: 15px;
+.innermenu li {
+  font-size: 13px;
+  padding-top: 5px;
 }
-.campaign {
-  padding-right: 20px;
+.quest {
+  padding-right: 30px;
 }
 .event {
   padding-right: 20px;
 }
-.notice {
-  padding-right: 22px;
-}
+
 #menu li {
   color: #999;
   padding-bottom: 3px;

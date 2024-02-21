@@ -131,7 +131,7 @@ const Join = () => {
               type="password"
               placeholder="비밀번호는 영문,숫자,특수문자 포함 8자리이상"
               name="sol_password"
-              value={formData.aw_password}
+              value={formData.sol_password}
               onChange={onChange}
             />
           </div>
@@ -246,7 +246,7 @@ const Join = () => {
               </select>
             </div>
             <span>
-              회원가입완료후AW카드를등록하시면생일무료음료쿠폰이발생됩니다.
+              회원가입완료후SOL카드를등록하시면생일무료음료쿠폰이발생됩니다.
             </span>
           </div>
           <div id="Jointopinput" className="phone">

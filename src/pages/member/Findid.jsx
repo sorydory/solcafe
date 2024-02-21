@@ -7,9 +7,9 @@ import "./Findid.css";
 const Findid = () => {
   const [idInfo, setIdInfo] = useState("");
   const [formData, setFormData] = useState({
-    aw_name: "",
-    aw_phone: "",
-    aw_email1: "",
+    sol_name: "",
+    sol_phone: "",
+    sol_email1: "",
   });
   const onChange = (e) => {
     const { name, value } = e.target;
@@ -19,30 +19,30 @@ const Findid = () => {
     });
   };
   useEffect(() => {
-    if (formData.aw_phone.length === 11) {
+    if (formData.sol_phone.length === 11) {
       setFormData({
         ...formData,
-        aw_phone: formData.aw_phone.replace(
+        sol_phone: formData.sol_phone.replace(
           /(\d{3})(\d{4})(\d{4})/,
           "$1-$2-$3"
         ),
       });
-    } else if (formData.aw_phone.length === 13) {
+    } else if (formData.sol_phone.length === 13) {
       setFormData({
         ...formData,
-        aw_phone: formData.aw_phone
+        sol_phone: formData.sol_phone
           //하이픈이 입력되면 공백으로 변경되고 하이픈이 다시 생성됨
           .replace(/-/g, "")
           .replace(/(\d{3})(\d{4})(\d{4})/, "$1-$2-$3"),
       });
     }
-  }, [formData.aw_phone]);
+  }, [formData.sol_phone]);
   const onSubmit = (e) => {
     e.preventDefault();
     const reg4 =
       /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-    if (formData.aw_phone.length === 13) {
-      if (reg4.test(formData.aw_email1)) {
+    if (formData.sol_phone.length === 13) {
+      if (reg4.test(formData.sol_email1)) {
         axios
           .post(`${API_URL}/findid`, formData)
           .then((res) => {
@@ -55,14 +55,14 @@ const Findid = () => {
         alert("이메일을 다시 입력해주세요");
         setFormData({
           ...formData,
-          aw_email1: "",
+          sol_email1: "",
         });
       }
     } else {
       alert("전화번호를 다시 입력해주세요");
       setFormData({
         ...formData,
-        aw_phone: "",
+        sol_phone: "",
       });
     }
   };

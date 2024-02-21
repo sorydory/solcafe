@@ -13,8 +13,8 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [loginDate, setLoginDate] = useState({
-    aw_id: "",
-    aw_password: "",
+    sol_id: "",
+    sol_password: "",
   });
   const onChange = (e) => {
     const { name, value } = e.target;
@@ -27,22 +27,25 @@ const Login = () => {
     //form 전송이벤트 제거
     e.preventDefault();
     //input에 입력 되었는지 확인
-    if (loginDate.aw_id === "" || loginDate.aw_password === "") {
+    if (loginDate.sol_id === "" || loginDate.sol_password === "") {
       alert("아이디와 비밀번호를 입력해주세요.");
     } else {
       axios
         .post(`${API_URL}/login`, loginDate)
         .then((result) => {
-          const { aw_id, aw_nickname } = result.data[0];
-          if (aw_id && aw_nickname) {
+          const { sol_id, sol_nickname } = result.data[0];
+          if (sol_id && sol_nickname) {
             alert("로그인 되었습니다.");
             //현재시간 객체 생성
             let expires = new Date();
             //60분을 더한 값으로 변경
             expires.setMinutes(expires.getMinutes() + 60);
             //쿠키 생성
-            setCookie("aw_id", `${aw_id}`, { path: "/", expires });
-            setCookie("aw_nickname", `${aw_nickname}`, { path: "/", expires });
+            setCookie("sol_id", `${sol_id}`, { path: "/", expires });
+            setCookie("sol_nickname", `${sol_nickname}`, {
+              path: "/",
+              expires,
+            });
             dispatch(setLogin());
             dispatch(getToHome(navigate));
           } else {
@@ -67,16 +70,16 @@ const Login = () => {
               type="text"
               className="id"
               placeholder="아이디를 입력해 주세요."
-              name="aw_id"
-              value={loginDate.aw_id}
+              name="sol_id"
+              value={loginDate.sol_id}
               onChange={onChange}
             />
             <input
               type="password"
               className="password"
               placeholder="비밀번호를 입력해 주세요."
-              name="aw_password"
-              value={loginDate.aw_password}
+              name="sol_password"
+              value={loginDate.sol_password}
               onChange={onChange}
             />
             <p className="idcheck">
